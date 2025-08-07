@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InsideMan Chat Tester</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: 30px auto;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    #chatbox {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+      height: 400px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+    }
+    .message {
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      max-width: 75%;
+      word-wrap: break-word;
+    }
+    .user {
+      background: #d1ecf1;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+    .bot {
+      background: #e2e3e5;
+      align-self: flex-start;
+      margin-right: auto;
+    }
+    .labels {
+      font-size: 0.8em;
+      color: #555;
+      margin-top: 5px;
+    }
+    #inputArea {
+      display: flex;
+      gap: 10px;
+    }
+    #messageInput {
+      flex: 1;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 15px;
+    }
+    #chatbox-container {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>InsideMan Chatbot — MVP Tester</h2>
+
+  <div id="chatbox-container">
+    <div id="chatbox"></div>
+  </div>
+
+  <div id="inputArea">
+    <input type="text" id="messageInput" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
